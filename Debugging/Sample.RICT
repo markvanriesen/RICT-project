@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soSA xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a0bb77a9-89cb-49db-bffb-602418f4f59d" xmlns="http://schemas.microsoft.com/dsltools/RICT">
+  <impactLevels>
+    <soSAHasImpactLevels Id="eec5c8f2-71c3-41a2-a2c4-264cde29cb3f">
+      <systemicLevel Id="04f23652-4f92-4e74-8e59-c6cd0750fba7" name="Structural">
+        <concerns>
+          <impactLevelHasConcerns Id="88b14012-45fc-49ba-85e5-9d8dfce377c8">
+            <economicConcern Id="e9474751-f65e-42a4-bb19-35bb77babb1a" name="Cost of travel" />
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="1ebbb8b2-95fc-46d0-94c2-182cc131af4f">
+            <socialConcern Id="f8781f2c-a754-49cd-a7e1-1239cfbd4c00" name="Speed of travel" />
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="6b2d0862-da44-4c9c-9c45-7f7a623d7d6c">
+            <environmentalConcern Id="0a39f103-6fec-4027-9783-c6ee089c2d7a" name="GHC emissions" />
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="a9f81091-6a34-4a1e-a867-686035298f4f">
+            <economicConcern Id="09193307-32c4-4da9-ad94-26313d2687d5" name="Cars produced">
+              <targetConcerns2>
+                <positiveEffectConcern Id="09915f57-4c8d-41ae-a661-149185a1e7e1">
+                  <environmentalConcernMoniker name="/04f23652-4f92-4e74-8e59-c6cd0750fba7/GHC emissions" />
+                </positiveEffectConcern>
+              </targetConcerns2>
+            </economicConcern>
+          </impactLevelHasConcerns>
+        </concerns>
+      </systemicLevel>
+    </soSAHasImpactLevels>
+    <soSAHasImpactLevels Id="ff8c15fe-cf44-4a55-a1d9-dcc0a6ff66e8">
+      <enablingLevel Id="de2c6076-0073-4e23-a9e1-7f8e145ceca6" name="Enabling">
+        <concerns>
+          <impactLevelHasConcerns Id="5c6247d7-5b22-479a-935e-a79b57df7118">
+            <socialConcern Id="56590489-aedc-4cf7-ba1d-70f68c550965" name="Use of public transport">
+              <targetConcerns3>
+                <negativeEffectConcern Id="0bb5cab0-54e8-4a67-a3e8-a3ed0b71a25c">
+                  <environmentalConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Cars on road" />
+                </negativeEffectConcern>
+              </targetConcerns3>
+            </socialConcern>
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="7678b06d-c3fa-4207-aa45-3e72b27470ce">
+            <socialConcern Id="a29dd75d-f46b-4d46-9485-fd52ea6a8d69" name="Possession of personal cars">
+              <targetConcerns2>
+                <positiveEffectConcern Id="2a405051-04b6-407a-b5b9-7e03f63aa158">
+                  <socialConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Impact of ICT failure" />
+                </positiveEffectConcern>
+                <positiveEffectConcern Id="6cb4240d-13fd-4141-ae0c-edb88266a1c0">
+                  <environmentalConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Cars parked" />
+                </positiveEffectConcern>
+                <positiveEffectConcern Id="51dad18b-2dae-44f2-a6c1-77d9be5955bc">
+                  <environmentalConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Cars on road" />
+                </positiveEffectConcern>
+                <positiveEffectConcern Id="43d30ea2-a9e0-4c4a-b100-e8ea46a72cd8">
+                  <economicConcernMoniker name="/04f23652-4f92-4e74-8e59-c6cd0750fba7/Cars produced" />
+                </positiveEffectConcern>
+              </targetConcerns2>
+            </socialConcern>
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="6b7b4f31-17df-4386-a74f-368563a49b3a">
+            <technicalConcern Id="e0678e72-3f16-4e39-be39-0467a1392783" name="Efficiency of transport">
+              <targetConcerns2>
+                <positiveEffectConcern Id="807d73ee-19e4-4c42-9cd5-20bca02c9aae">
+                  <socialConcernMoniker name="/04f23652-4f92-4e74-8e59-c6cd0750fba7/Speed of travel" />
+                </positiveEffectConcern>
+              </targetConcerns2>
+              <targetConcerns3>
+                <negativeEffectConcern Id="e6644353-b782-4ec0-8844-afbec6609932">
+                  <economicConcernMoniker name="/04f23652-4f92-4e74-8e59-c6cd0750fba7/Cost of travel" />
+                </negativeEffectConcern>
+              </targetConcerns3>
+            </technicalConcern>
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="81794065-61a9-42d3-a2e7-1af7d2e31e48">
+            <socialConcern Id="536d6ccf-eb6d-4b70-854f-53435a4a88c7" name="Impact of ICT failure">
+              <targetConcerns3>
+                <negativeEffectConcern Id="41c07cc8-604e-4b1a-bf3e-006606f27918">
+                  <socialConcernMoniker name="/04f23652-4f92-4e74-8e59-c6cd0750fba7/Speed of travel" />
+                </negativeEffectConcern>
+              </targetConcerns3>
+            </socialConcern>
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="9dc26177-871a-4a42-9211-cafbaecf6def">
+            <environmentalConcern Id="b2be7ca1-7468-444e-8e88-0d42cb814a48" name="Cars parked">
+              <targetConcerns3>
+                <negativeEffectConcern Id="2b75f3fb-eb40-4819-b04c-3115f2a24d25">
+                  <socialConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Free space for pedestrians" />
+                </negativeEffectConcern>
+              </targetConcerns3>
+            </environmentalConcern>
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="bd7a48de-ecea-420b-9040-2609599321fc">
+            <socialConcern Id="c504332a-fe83-411d-979d-dc2d4b08ca38" name="Free space for pedestrians" />
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="7a486f8b-732e-4715-b7b7-e54469e5e44a">
+            <environmentalConcern Id="61d0207f-5909-490e-9d95-8a0f2602ffb9" name="Cars on road">
+              <targetConcerns2>
+                <positiveEffectConcern Id="64781578-d547-4eac-a265-53e268bd4f72">
+                  <environmentalConcernMoniker name="/04f23652-4f92-4e74-8e59-c6cd0750fba7/GHC emissions" />
+                </positiveEffectConcern>
+              </targetConcerns2>
+              <targetConcerns3>
+                <negativeEffectConcern Id="201e29be-736c-4514-b2dc-32af0cbc4715">
+                  <socialConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Free space for pedestrians" />
+                </negativeEffectConcern>
+              </targetConcerns3>
+            </environmentalConcern>
+          </impactLevelHasConcerns>
+        </concerns>
+      </enablingLevel>
+    </soSAHasImpactLevels>
+    <soSAHasImpactLevels Id="fcccfae5-92c1-4f00-a22f-6b65cab3597e">
+      <immediateLevel Id="4f1bf701-10bf-4541-9df0-e0f8314f482f" name="Life-cycle">
+        <concerns>
+          <impactLevelHasConcerns Id="43ec258f-39d8-4dd9-9235-b093956acfcf">
+            <socialConcern Id="82f0b4d8-7e71-4895-8347-a7a07774afc7" name="Data privacy" />
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="c7ecc5d3-6abd-411f-a86d-530a4b40db66">
+            <socialConcern Id="15044237-458f-4e74-b327-7dd7e8cc678d" name="Flexibility of mobile means">
+              <targetConcerns2>
+                <positiveEffectConcern Id="fe2e7b22-f9ab-44f6-99d2-c2ce2c9388b4">
+                  <socialConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Use of public transport" />
+                </positiveEffectConcern>
+              </targetConcerns2>
+            </socialConcern>
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="90d4b209-e4b3-448c-a37a-545fb32d2e16">
+            <socialConcern Id="94c62546-ab89-4224-b9c1-cc4d11e8b4a3" name="ICT dependency">
+              <targetConcerns2>
+                <positiveEffectConcern Id="b4ee5d68-346c-4e34-9913-227bf9b57bdc">
+                  <socialConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Impact of ICT failure" />
+                </positiveEffectConcern>
+              </targetConcerns2>
+            </socialConcern>
+          </impactLevelHasConcerns>
+          <impactLevelHasConcerns Id="ca52b1d7-c92d-4bac-bdeb-98b76f05eb3f">
+            <technicalConcern Id="dd740b89-67cd-437f-b169-19fa0b921f10" name="Matchmaking quality btwn supply and demand">
+              <targetConcerns2>
+                <positiveEffectConcern Id="8559669e-5c9b-4c04-8414-f725852186a8">
+                  <technicalConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Efficiency of transport" />
+                </positiveEffectConcern>
+              </targetConcerns2>
+            </technicalConcern>
+          </impactLevelHasConcerns>
+        </concerns>
+        <softwareArchitectures>
+          <immediateLevelHasSoftwareArchitectures Id="1e874361-c3d9-4d28-99a1-4dc7a1d4d4a2">
+            <softwareArchitecture Id="85eecbe2-78bd-4a4c-8175-94022fc30f6a" name="MaaS system">
+              <targetConcerns5>
+                <positiveEffectSA Id="fc4470d3-aec0-4672-a7d0-666791f577b8">
+                  <socialConcernMoniker name="/4f1bf701-10bf-4541-9df0-e0f8314f482f/Flexibility of mobile means" />
+                </positiveEffectSA>
+                <positiveEffectSA Id="bfc2b28e-d76f-4d73-aa25-b2e6c08dda26">
+                  <socialConcernMoniker name="/4f1bf701-10bf-4541-9df0-e0f8314f482f/ICT dependency" />
+                </positiveEffectSA>
+                <positiveEffectSA Id="44f29325-15fe-4368-9ce3-e83642e43592">
+                  <technicalConcernMoniker name="/4f1bf701-10bf-4541-9df0-e0f8314f482f/Matchmaking quality btwn supply and demand" />
+                </positiveEffectSA>
+                <positiveEffectSA Id="3320a4b9-e91a-4dde-9d07-38145dcf7222">
+                  <environmentalConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Cars on road" />
+                </positiveEffectSA>
+              </targetConcerns5>
+              <targetConcerns6>
+                <negativeEffectSA Id="37c98728-7341-4b2f-a037-a51596fe4186">
+                  <socialConcernMoniker name="/4f1bf701-10bf-4541-9df0-e0f8314f482f/Data privacy" />
+                </negativeEffectSA>
+                <negativeEffectSA Id="d5c11405-28b4-4c26-8d93-86df1c98a6ae">
+                  <socialConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Possession of personal cars" />
+                </negativeEffectSA>
+              </targetConcerns6>
+            </softwareArchitecture>
+          </immediateLevelHasSoftwareArchitectures>
+        </softwareArchitectures>
+      </immediateLevel>
+    </soSAHasImpactLevels>
+  </impactLevels>
+</soSA>

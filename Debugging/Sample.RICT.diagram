@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rICTDiagram dslVersion="1.0.0.0" Id="2403d4f1-7701-480d-afa2-d7b9d3e26276" absoluteBounds="0, 0, 14.375, 9.375" name="Sample">
+  <soSAMoniker Id="a0bb77a9-89cb-49db-bffb-602418f4f59d" />
+  <nestedChildShapes>
+    <sSystematicLevel Id="4eff7ff2-ed9e-41ea-8cfd-2eddfa42543f" absoluteBounds="2.375, 1.5, 11.75, 7.625">
+      <systemicLevelMoniker Id="04f23652-4f92-4e74-8e59-c6cd0750fba7" />
+    </sSystematicLevel>
+    <sEnablingLevel Id="d0a17852-0e2d-43fa-9544-0cbb79562b2a" absoluteBounds="3.25, 1.625, 9.5, 5.625">
+      <enablingLevelMoniker Id="de2c6076-0073-4e23-a9e1-7f8e145ceca6" />
+    </sEnablingLevel>
+    <sImmediateLevel Id="8d1ab99d-4b71-442f-b00b-b0f23ac3b7ca" absoluteBounds="4.375, 1.75, 6.75, 3.375">
+      <immediateLevelMoniker Id="4f1bf701-10bf-4541-9df0-e0f8314f482f" />
+    </sImmediateLevel>
+    <sSoftwareArchitecture Id="6cdb1669-bef3-4bcb-9016-c2488ac5827b" absoluteBounds="6.375, 2.25, 1, 1">
+      <softwareArchitectureMoniker Id="85eecbe2-78bd-4a4c-8175-94022fc30f6a" />
+    </sSoftwareArchitecture>
+    <sSocialConcern Id="cc4baba5-39bb-4657-83a6-fc5e6e4b1ded" absoluteBounds="5, 2.5, 1, 0.5">
+      <socialConcernMoniker name="/4f1bf701-10bf-4541-9df0-e0f8314f482f/Data privacy" />
+    </sSocialConcern>
+    <sSocialConcern Id="3c2dca83-5cd9-44f3-a499-5df7cc741831" absoluteBounds="4.5, 3.375, 1.75, 0.5">
+      <socialConcernMoniker name="/4f1bf701-10bf-4541-9df0-e0f8314f482f/Flexibility of mobile means" />
+    </sSocialConcern>
+    <sNegativeEffect Id="1b113cb1-2e24-4cca-a98b-439270fd0135" edgePoints="[(6.375 : 2.75); (6 : 2.75)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <negativeEffectSAMoniker Id="37c98728-7341-4b2f-a037-a51596fe4186" />
+      <relativeChildShapes />
+      <nodes>
+        <sSoftwareArchitectureMoniker Id="6cdb1669-bef3-4bcb-9016-c2488ac5827b" />
+        <sSocialConcernMoniker Id="cc4baba5-39bb-4657-83a6-fc5e6e4b1ded" />
+      </nodes>
+    </sNegativeEffect>
+    <sPositiveEffect Id="23e7fb4c-aca4-414c-a9cd-aed8d11591b1" edgePoints="[(6.52144660940673 : 3.10355339059327); (6.25 : 3.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectSAMoniker Id="fc4470d3-aec0-4672-a7d0-666791f577b8" />
+      <relativeChildShapes />
+      <nodes>
+        <sSoftwareArchitectureMoniker Id="6cdb1669-bef3-4bcb-9016-c2488ac5827b" />
+        <sSocialConcernMoniker Id="3c2dca83-5cd9-44f3-a499-5df7cc741831" />
+      </nodes>
+    </sPositiveEffect>
+    <sSocialConcern Id="df7f8474-fa2a-49eb-bf58-f0c646945a32" absoluteBounds="7.75, 3.25, 1.125, 0.5">
+      <socialConcernMoniker name="/4f1bf701-10bf-4541-9df0-e0f8314f482f/ICT dependency" />
+    </sSocialConcern>
+    <sPositiveEffect Id="584942e7-c48c-4edd-aa8e-16c1f0b2b7a7" edgePoints="[(7.375 : 2.75); (7.75 : 3.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectSAMoniker Id="bfc2b28e-d76f-4d73-aa25-b2e6c08dda26" />
+      <relativeChildShapes />
+      <nodes>
+        <sSoftwareArchitectureMoniker Id="6cdb1669-bef3-4bcb-9016-c2488ac5827b" />
+        <sSocialConcernMoniker Id="df7f8474-fa2a-49eb-bf58-f0c646945a32" />
+      </nodes>
+    </sPositiveEffect>
+    <sTechnicalConcern Id="66a6bc34-1b56-4ff5-beff-5cbd01b3ce55" absoluteBounds="7.875, 2.375, 2.75, 0.5">
+      <technicalConcernMoniker name="/4f1bf701-10bf-4541-9df0-e0f8314f482f/Matchmaking quality btwn supply and demand" />
+    </sTechnicalConcern>
+    <sPositiveEffect Id="4cf9c4c9-910f-4c49-856b-94aa306d1a02" edgePoints="[(7.375 : 2.75); (7.875 : 2.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectSAMoniker Id="44f29325-15fe-4368-9ce3-e83642e43592" />
+      <relativeChildShapes />
+      <nodes>
+        <sSoftwareArchitectureMoniker Id="6cdb1669-bef3-4bcb-9016-c2488ac5827b" />
+        <sTechnicalConcernMoniker Id="66a6bc34-1b56-4ff5-beff-5cbd01b3ce55" />
+      </nodes>
+    </sPositiveEffect>
+    <sSocialConcern Id="52bfe6bb-2f49-4a81-b298-bb2a2d214bda" absoluteBounds="3.75, 4.75, 1.5, 0.5">
+      <socialConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Use of public transport" />
+    </sSocialConcern>
+    <sPositiveEffect Id="0e384f3a-6668-47c1-a0b3-f94dfcf2da8b" edgePoints="[(5.375 : 3.875); (4.5 : 4.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectConcernMoniker Id="fe2e7b22-f9ab-44f6-99d2-c2ce2c9388b4" />
+      <relativeChildShapes />
+      <nodes>
+        <sSocialConcernMoniker Id="3c2dca83-5cd9-44f3-a499-5df7cc741831" />
+        <sSocialConcernMoniker Id="52bfe6bb-2f49-4a81-b298-bb2a2d214bda" />
+      </nodes>
+    </sPositiveEffect>
+    <sSocialConcern Id="d0cd73df-2275-421a-a89e-cc9b72a4eee4" absoluteBounds="7.375, 5.25, 1.75, 0.5">
+      <socialConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Possession of personal cars" />
+    </sSocialConcern>
+    <sNegativeEffect Id="04435c2c-9893-465c-b56f-f701332e92ea" edgePoints="[(6.9749409763659 : 3.23990999300181); (7.81679910360799 : 5.25)]" fixedFrom="Caller" fixedTo="Caller">
+      <negativeEffectSAMoniker Id="d5c11405-28b4-4c26-8d93-86df1c98a6ae" />
+      <relativeChildShapes />
+      <nodes>
+        <sSoftwareArchitectureMoniker Id="6cdb1669-bef3-4bcb-9016-c2488ac5827b" />
+        <sSocialConcernMoniker Id="d0cd73df-2275-421a-a89e-cc9b72a4eee4" />
+      </nodes>
+    </sNegativeEffect>
+    <sTechnicalConcern Id="ddf13c4f-c06a-4ddb-918b-65b2fe2e1352" absoluteBounds="11.125, 3.875, 1.375, 0.5">
+      <technicalConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Efficiency of transport" />
+    </sTechnicalConcern>
+    <sPositiveEffect Id="112727c4-39c0-484f-b99b-7e11538c1090" edgePoints="[(10.625 : 2.875); (11.125 : 3.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectConcernMoniker Id="8559669e-5c9b-4c04-8414-f725852186a8" />
+      <relativeChildShapes />
+      <nodes>
+        <sTechnicalConcernMoniker Id="66a6bc34-1b56-4ff5-beff-5cbd01b3ce55" />
+        <sTechnicalConcernMoniker Id="ddf13c4f-c06a-4ddb-918b-65b2fe2e1352" />
+      </nodes>
+    </sPositiveEffect>
+    <sEconomicConcern Id="15d8545a-4147-4f59-b509-2465548db10c" absoluteBounds="12.875, 4.875, 1.125, 0.5">
+      <economicConcernMoniker name="/04f23652-4f92-4e74-8e59-c6cd0750fba7/Cost of travel" />
+    </sEconomicConcern>
+    <sSocialConcern Id="2f0ee1fc-c948-455c-8040-b531135cf1e9" absoluteBounds="10.375, 4.875, 1.5, 0.5">
+      <socialConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Impact of ICT failure" />
+    </sSocialConcern>
+    <sPositiveEffect Id="7b041ba6-5eba-4182-aa9a-6250f4e9579d" edgePoints="[(8.875 : 3.75); (10.375 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectConcernMoniker Id="b4ee5d68-346c-4e34-9913-227bf9b57bdc" />
+      <relativeChildShapes />
+      <nodes>
+        <sSocialConcernMoniker Id="df7f8474-fa2a-49eb-bf58-f0c646945a32" />
+        <sSocialConcernMoniker Id="2f0ee1fc-c948-455c-8040-b531135cf1e9" />
+      </nodes>
+    </sPositiveEffect>
+    <sNegativeEffect Id="ba638ded-3aa0-43d8-9a3b-51921581d646" edgePoints="[(12.5 : 4.375); (12.875 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeEffectConcernMoniker Id="e6644353-b782-4ec0-8844-afbec6609932" />
+      <relativeChildShapes />
+      <nodes>
+        <sTechnicalConcernMoniker Id="ddf13c4f-c06a-4ddb-918b-65b2fe2e1352" />
+        <sEconomicConcernMoniker Id="15d8545a-4147-4f59-b509-2465548db10c" />
+      </nodes>
+    </sNegativeEffect>
+    <sSocialConcern Id="491179a4-7a9a-4a32-950e-7f020a2905b1" absoluteBounds="12.125, 5.75, 1, 0.5">
+      <socialConcernMoniker name="/04f23652-4f92-4e74-8e59-c6cd0750fba7/Speed of travel" />
+    </sSocialConcern>
+    <sNegativeEffect Id="c8e954e9-fca4-46bc-954a-6d0a4bed6a31" edgePoints="[(11.875 : 5.375); (12.125 : 5.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeEffectConcernMoniker Id="41c07cc8-604e-4b1a-bf3e-006606f27918" />
+      <relativeChildShapes />
+      <nodes>
+        <sSocialConcernMoniker Id="2f0ee1fc-c948-455c-8040-b531135cf1e9" />
+        <sSocialConcernMoniker Id="491179a4-7a9a-4a32-950e-7f020a2905b1" />
+      </nodes>
+    </sNegativeEffect>
+    <sPositiveEffect Id="13337f49-faaa-4a28-97d0-97f85999b59f" edgePoints="[(11.8125 : 4.375); (12.625 : 5.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectConcernMoniker Id="807d73ee-19e4-4c42-9cd5-20bca02c9aae" />
+      <relativeChildShapes />
+      <nodes>
+        <sTechnicalConcernMoniker Id="ddf13c4f-c06a-4ddb-918b-65b2fe2e1352" />
+        <sSocialConcernMoniker Id="491179a4-7a9a-4a32-950e-7f020a2905b1" />
+      </nodes>
+    </sPositiveEffect>
+    <sPositiveEffect Id="bf35b9fc-bda9-4f31-bdfc-70beefa76dce" edgePoints="[(9.125 : 5.5); (10.375 : 5.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectConcernMoniker Id="2a405051-04b6-407a-b5b9-7e03f63aa158" />
+      <relativeChildShapes />
+      <nodes>
+        <sSocialConcernMoniker Id="d0cd73df-2275-421a-a89e-cc9b72a4eee4" />
+        <sSocialConcernMoniker Id="2f0ee1fc-c948-455c-8040-b531135cf1e9" />
+      </nodes>
+    </sPositiveEffect>
+    <sEnvironmentalConcern Id="c74b2f16-5b43-4400-bfbb-fd10f4633298" absoluteBounds="9.75, 5.75, 1, 0.5">
+      <environmentalConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Cars parked" />
+    </sEnvironmentalConcern>
+    <sPositiveEffect Id="570695fe-21f5-4139-ba1c-bbee1a13b0e0" edgePoints="[(8.94117626733424 : 5.75); (9.75 : 6)]" fixedFrom="Caller" fixedTo="NotFixed">
+      <positiveEffectConcernMoniker Id="6cb4240d-13fd-4141-ae0c-edb88266a1c0" />
+      <relativeChildShapes />
+      <nodes>
+        <sSocialConcernMoniker Id="d0cd73df-2275-421a-a89e-cc9b72a4eee4" />
+        <sEnvironmentalConcernMoniker Id="c74b2f16-5b43-4400-bfbb-fd10f4633298" />
+      </nodes>
+    </sPositiveEffect>
+    <sSocialConcern Id="a3f07a29-85b3-4a21-82ec-29a7e56b6a0c" absoluteBounds="7.5, 6.375, 1.625, 0.5">
+      <socialConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Free space for pedestrians" />
+    </sSocialConcern>
+    <sNegativeEffect Id="10cb826b-a52c-4754-8f8d-47187d803fa6" edgePoints="[(9.75 : 6.25); (9.125 : 6.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeEffectConcernMoniker Id="2b75f3fb-eb40-4819-b04c-3115f2a24d25" />
+      <relativeChildShapes />
+      <nodes>
+        <sEnvironmentalConcernMoniker Id="c74b2f16-5b43-4400-bfbb-fd10f4633298" />
+        <sSocialConcernMoniker Id="a3f07a29-85b3-4a21-82ec-29a7e56b6a0c" />
+      </nodes>
+    </sNegativeEffect>
+    <sEnvironmentalConcern Id="c7f2c9d0-ec91-462a-8721-f9d5833f603d" absoluteBounds="6, 6.125, 1, 0.5">
+      <environmentalConcernMoniker name="/de2c6076-0073-4e23-a9e1-7f8e145ceca6/Cars on road" />
+    </sEnvironmentalConcern>
+    <sPositiveEffect Id="de3c4f2e-44f6-46f3-bdb1-f60cbe43ee97" edgePoints="[(7.375 : 5.75); (7 : 6.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectConcernMoniker Id="51dad18b-2dae-44f2-a6c1-77d9be5955bc" />
+      <relativeChildShapes />
+      <nodes>
+        <sSocialConcernMoniker Id="d0cd73df-2275-421a-a89e-cc9b72a4eee4" />
+        <sEnvironmentalConcernMoniker Id="c7f2c9d0-ec91-462a-8721-f9d5833f603d" />
+      </nodes>
+    </sPositiveEffect>
+    <sNegativeEffect Id="13156014-5fac-4f64-9d43-7654ca9bed86" edgePoints="[(7 : 6.375); (7.5 : 6.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeEffectConcernMoniker Id="201e29be-736c-4514-b2dc-32af0cbc4715" />
+      <relativeChildShapes />
+      <nodes>
+        <sEnvironmentalConcernMoniker Id="c7f2c9d0-ec91-462a-8721-f9d5833f603d" />
+        <sSocialConcernMoniker Id="a3f07a29-85b3-4a21-82ec-29a7e56b6a0c" />
+      </nodes>
+    </sNegativeEffect>
+    <sNegativeEffect Id="d21e7f77-3856-4e9c-b499-b360a074dfd5" edgePoints="[(5.25 : 5.25); (6 : 6.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeEffectConcernMoniker Id="0bb5cab0-54e8-4a67-a3e8-a3ed0b71a25c" />
+      <relativeChildShapes />
+      <nodes>
+        <sSocialConcernMoniker Id="52bfe6bb-2f49-4a81-b298-bb2a2d214bda" />
+        <sEnvironmentalConcernMoniker Id="c7f2c9d0-ec91-462a-8721-f9d5833f603d" />
+      </nodes>
+    </sNegativeEffect>
+    <sPositiveEffect Id="2708485a-4a90-420c-ae62-4bb9afd35a67" edgePoints="[(6.875 : 3.25); (6.5 : 6.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectSAMoniker Id="3320a4b9-e91a-4dde-9d07-38145dcf7222" />
+      <relativeChildShapes />
+      <nodes>
+        <sSoftwareArchitectureMoniker Id="6cdb1669-bef3-4bcb-9016-c2488ac5827b" />
+        <sEnvironmentalConcernMoniker Id="c7f2c9d0-ec91-462a-8721-f9d5833f603d" />
+      </nodes>
+    </sPositiveEffect>
+    <sEnvironmentalConcern Id="49b065cb-b268-4582-9040-b980c4915281" absoluteBounds="5, 7.375, 1.5, 0.5">
+      <environmentalConcernMoniker name="/04f23652-4f92-4e74-8e59-c6cd0750fba7/GHC emissions" />
+    </sEnvironmentalConcern>
+    <sPositiveEffect Id="2c37fb53-80b5-4f24-b969-502bb5060ee5" edgePoints="[(6.5 : 6.625); (5.75 : 7.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveEffectConcernMoniker Id="64781578-d547-4eac-a265-53e268bd4f72" />
+      <relativeChildShapes />
+      <nodes>
+        <sEnvironmentalConcernMoniker Id="c7f2c9d0-ec91-462a-8721-f9d5833f603d" />
+        <sEnvironmentalConcernMoniker Id="49b065cb-b268-4582-9040-b980c4915281" />
+      </nodes>
+    </sPositiveEffect>
+    <sEconomicConcern Id="3f6a9f5f-ed76-4439-9807-36fe7610568c" absoluteBounds="2.75, 5.875, 1.125, 0.5">
+      <economicConcernMoniker name="/04f23652-4f92-4e74-8e59-c6cd0750fba7/Cars produced" />
+    </sEconomicConcern>
+    <sPositiveEffect Id="6d901ba9-bd33-4d72-9f1f-b160b2fcdfc1" edgePoints="[(7.375 : 5.5); (6.65040832453244 : 5.59459508507623 : JumpStart); (6.4851440220121 : 5.61617025808231 : JumpEnd); (5.73920871950713 : 5.71355174311841 : JumpStart); (5.57394441698679 : 5.73512691612449 : JumpEnd); (3.875 : 5.95692326999642)]" fixedFrom="NotFixed" fixedTo="Caller">
+      <positiveEffectConcernMoniker Id="43d30ea2-a9e0-4c4a-b100-e8ea46a72cd8" />
+      <relativeChildShapes />
+      <nodes>
+        <sSocialConcernMoniker Id="d0cd73df-2275-421a-a89e-cc9b72a4eee4" />
+        <sEconomicConcernMoniker Id="3f6a9f5f-ed76-4439-9807-36fe7610568c" />
+      </nodes>
+    </sPositiveEffect>
+    <sPositiveEffect Id="f2bced59-f0a7-4305-a05b-6ac120094f1d" edgePoints="[(3.41386540570918 : 6.375); (5 : 7.625)]" fixedFrom="Caller" fixedTo="NotFixed">
+      <positiveEffectConcernMoniker Id="09915f57-4c8d-41ae-a661-149185a1e7e1" />
+      <relativeChildShapes />
+      <nodes>
+        <sEconomicConcernMoniker Id="3f6a9f5f-ed76-4439-9807-36fe7610568c" />
+        <sEnvironmentalConcernMoniker Id="49b065cb-b268-4582-9040-b980c4915281" />
+      </nodes>
+    </sPositiveEffect>
+  </nestedChildShapes>
+</rICTDiagram>

@@ -1,0 +1,855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema id="RICTSchema" targetNamespace="http://schemas.microsoft.com/dsltools/RICT" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/dsltools/RICT" xmlns:core="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import id="CoreSchema" namespace="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" />
+  <!-- SoSA -->
+  <xsd:element name="soSA" type="SoSA" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="SoSA">
+    <xsd:annotation>
+      <xsd:documentation>The root in which all other elements are embedded. Appears as a diagram.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: SoSAHasImpactLevels -->
+          <xsd:element name="impactLevels" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of SoSAHasImpactLevels</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="soSAHasImpactLevels" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of SoSAHasImpactLevels needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- dslVersion -->
+        <xsd:attribute name="dslVersion" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Version of the model serialized in this file.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SoSA Moniker -->
+  <xsd:element name="soSAMoniker" type="SoSAMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="SoSAMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for SoSA instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Concern -->
+  <xsd:element name="concern" type="Concern" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="Concern">
+    <xsd:annotation>
+      <xsd:documentation>Elements embedded in the model. Appear as boxes on the diagram.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: UndecidedEffectConcern -->
+          <xsd:element name="targetConcerns1" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of UndecidedEffectConcern</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:choice minOccurs="0" maxOccurs="unbounded" >
+                  <xsd:element ref="undecidedEffectConcern">
+                    <xsd:annotation>
+                      <xsd:documentation>[Relationship deriving from UndecidedEffectConcern needs to be serialized in full-form]</xsd:documentation>
+                    </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element ref="concernMoniker" >
+                    <xsd:annotation>
+                      <xsd:documentation>[Target role-player]</xsd:documentation>
+                    </xsd:annotation>
+                  </xsd:element>
+                </xsd:choice>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: PositiveEffectConcern -->
+          <xsd:element name="targetConcerns2" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of PositiveEffectConcern</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="positiveEffectConcern" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of PositiveEffectConcern needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: NegativeEffectConcern -->
+          <xsd:element name="targetConcerns3" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of NegativeEffectConcern</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="negativeEffectConcern" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of NegativeEffectConcern needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" use="required" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Concern Moniker -->
+  <xsd:element name="concernMoniker" type="ConcernMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ConcernMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for Concern instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="name" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ImpactLevel -->
+  <xsd:element name="impactLevel" type="ImpactLevel" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ImpactLevel">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: ImpactLevelHasConcerns -->
+          <xsd:element name="concerns" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of ImpactLevelHasConcerns</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="impactLevelHasConcerns" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ImpactLevelHasConcerns needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ImpactLevel Moniker -->
+  <xsd:element name="impactLevelMoniker" type="ImpactLevelMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ImpactLevelMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ImpactLevel instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SystemicLevel -->
+  <xsd:element name="systemicLevel" type="SystemicLevel" substitutionGroup="impactLevel" />
+  <xsd:complexType name="SystemicLevel">
+    <xsd:complexContent>
+      <xsd:extension base="ImpactLevel">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SystemicLevel Moniker -->
+  <xsd:element name="systemicLevelMoniker" type="SystemicLevelMoniker" substitutionGroup="impactLevelMoniker" />
+  <xsd:complexType name="SystemicLevelMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for SystemicLevel instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="ImpactLevelMoniker">
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- EnablingLevel -->
+  <xsd:element name="enablingLevel" type="EnablingLevel" substitutionGroup="impactLevel" />
+  <xsd:complexType name="EnablingLevel">
+    <xsd:complexContent>
+      <xsd:extension base="ImpactLevel">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- EnablingLevel Moniker -->
+  <xsd:element name="enablingLevelMoniker" type="EnablingLevelMoniker" substitutionGroup="impactLevelMoniker" />
+  <xsd:complexType name="EnablingLevelMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for EnablingLevel instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="ImpactLevelMoniker">
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ImmediateLevel -->
+  <xsd:element name="immediateLevel" type="ImmediateLevel" substitutionGroup="impactLevel" />
+  <xsd:complexType name="ImmediateLevel">
+    <xsd:complexContent>
+      <xsd:extension base="ImpactLevel">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: ImmediateLevelHasSoftwareArchitectures -->
+          <xsd:element name="softwareArchitectures" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of ImmediateLevelHasSoftwareArchitectures</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="immediateLevelHasSoftwareArchitectures" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ImmediateLevelHasSoftwareArchitectures needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ImmediateLevel Moniker -->
+  <xsd:element name="immediateLevelMoniker" type="ImmediateLevelMoniker" substitutionGroup="impactLevelMoniker" />
+  <xsd:complexType name="ImmediateLevelMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ImmediateLevel instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="ImpactLevelMoniker">
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SoftwareArchitecture -->
+  <xsd:element name="softwareArchitecture" type="SoftwareArchitecture" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="SoftwareArchitecture">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: UndecidedEffectSA -->
+          <xsd:element name="targetConcerns4" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of UndecidedEffectSA</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="undecidedEffectSA" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of UndecidedEffectSA needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: PositiveEffectSA -->
+          <xsd:element name="targetConcerns5" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of PositiveEffectSA</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="positiveEffectSA" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of PositiveEffectSA needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: NegativeEffectSA -->
+          <xsd:element name="targetConcerns6" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of NegativeEffectSA</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="negativeEffectSA" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of NegativeEffectSA needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SoftwareArchitecture Moniker -->
+  <xsd:element name="softwareArchitectureMoniker" type="SoftwareArchitectureMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="SoftwareArchitectureMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for SoftwareArchitecture instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SocialConcern -->
+  <xsd:element name="socialConcern" type="SocialConcern" substitutionGroup="concern" />
+  <xsd:complexType name="SocialConcern">
+    <xsd:complexContent>
+      <xsd:extension base="Concern">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SocialConcern Moniker -->
+  <xsd:element name="socialConcernMoniker" type="SocialConcernMoniker" substitutionGroup="concernMoniker" />
+  <xsd:complexType name="SocialConcernMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for SocialConcern instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="ConcernMoniker">
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- TechnicalConcern -->
+  <xsd:element name="technicalConcern" type="TechnicalConcern" substitutionGroup="concern" />
+  <xsd:complexType name="TechnicalConcern">
+    <xsd:complexContent>
+      <xsd:extension base="Concern">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- TechnicalConcern Moniker -->
+  <xsd:element name="technicalConcernMoniker" type="TechnicalConcernMoniker" substitutionGroup="concernMoniker" />
+  <xsd:complexType name="TechnicalConcernMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for TechnicalConcern instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="ConcernMoniker">
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- EnvironmentalConcern -->
+  <xsd:element name="environmentalConcern" type="EnvironmentalConcern" substitutionGroup="concern" />
+  <xsd:complexType name="EnvironmentalConcern">
+    <xsd:complexContent>
+      <xsd:extension base="Concern">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- EnvironmentalConcern Moniker -->
+  <xsd:element name="environmentalConcernMoniker" type="EnvironmentalConcernMoniker" substitutionGroup="concernMoniker" />
+  <xsd:complexType name="EnvironmentalConcernMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for EnvironmentalConcern instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="ConcernMoniker">
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- EconomicConcern -->
+  <xsd:element name="economicConcern" type="EconomicConcern" substitutionGroup="concern" />
+  <xsd:complexType name="EconomicConcern">
+    <xsd:complexContent>
+      <xsd:extension base="Concern">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- EconomicConcern Moniker -->
+  <xsd:element name="economicConcernMoniker" type="EconomicConcernMoniker" substitutionGroup="concernMoniker" />
+  <xsd:complexType name="EconomicConcernMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for EconomicConcern instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="ConcernMoniker">
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- UndecidedEffectConcern -->
+  <xsd:element name="undecidedEffectConcern" abstract="true" type="UndecidedEffectConcern" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="UndecidedEffectConcern" abstract="true" >
+    <xsd:annotation>
+      <xsd:documentation>Reference relationship between Elements.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Concern -->
+          <xsd:element ref="concernMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- UndecidedEffectConcern Moniker -->
+  <xsd:element name="undecidedEffectConcernMoniker" type="UndecidedEffectConcernMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="UndecidedEffectConcernMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for UndecidedEffectConcern instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SoSAHasImpactLevels -->
+  <xsd:element name="soSAHasImpactLevels" type="SoSAHasImpactLevels" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="SoSAHasImpactLevels">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end ImpactLevel -->
+          <xsd:element ref="impactLevel" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SoSAHasImpactLevels Moniker -->
+  <xsd:element name="soSAHasImpactLevelsMoniker" type="SoSAHasImpactLevelsMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="SoSAHasImpactLevelsMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for SoSAHasImpactLevels instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ImpactLevelHasConcerns -->
+  <xsd:element name="impactLevelHasConcerns" type="ImpactLevelHasConcerns" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ImpactLevelHasConcerns">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Concern -->
+          <xsd:element ref="concern" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ImpactLevelHasConcerns Moniker -->
+  <xsd:element name="impactLevelHasConcernsMoniker" type="ImpactLevelHasConcernsMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ImpactLevelHasConcernsMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ImpactLevelHasConcerns instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ImmediateLevelHasSoftwareArchitectures -->
+  <xsd:element name="immediateLevelHasSoftwareArchitectures" type="ImmediateLevelHasSoftwareArchitectures" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ImmediateLevelHasSoftwareArchitectures">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end SoftwareArchitecture -->
+          <xsd:element ref="softwareArchitecture" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ImmediateLevelHasSoftwareArchitectures Moniker -->
+  <xsd:element name="immediateLevelHasSoftwareArchitecturesMoniker" type="ImmediateLevelHasSoftwareArchitecturesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ImmediateLevelHasSoftwareArchitecturesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ImmediateLevelHasSoftwareArchitectures instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- PositiveEffectConcern -->
+  <xsd:element name="positiveEffectConcern" type="PositiveEffectConcern" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="PositiveEffectConcern">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Concern -->
+          <xsd:element ref="concernMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- PositiveEffectConcern Moniker -->
+  <xsd:element name="positiveEffectConcernMoniker" type="PositiveEffectConcernMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="PositiveEffectConcernMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for PositiveEffectConcern instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- NegativeEffectConcern -->
+  <xsd:element name="negativeEffectConcern" type="NegativeEffectConcern" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="NegativeEffectConcern">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Concern -->
+          <xsd:element ref="concernMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- NegativeEffectConcern Moniker -->
+  <xsd:element name="negativeEffectConcernMoniker" type="NegativeEffectConcernMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="NegativeEffectConcernMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for NegativeEffectConcern instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- UndecidedEffectSA -->
+  <xsd:element name="undecidedEffectSA" type="UndecidedEffectSA" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="UndecidedEffectSA">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Concern -->
+          <xsd:element ref="concernMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- UndecidedEffectSA Moniker -->
+  <xsd:element name="undecidedEffectSAMoniker" type="UndecidedEffectSAMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="UndecidedEffectSAMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for UndecidedEffectSA instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- PositiveEffectSA -->
+  <xsd:element name="positiveEffectSA" type="PositiveEffectSA" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="PositiveEffectSA">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Concern -->
+          <xsd:element ref="concernMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- PositiveEffectSA Moniker -->
+  <xsd:element name="positiveEffectSAMoniker" type="PositiveEffectSAMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="PositiveEffectSAMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for PositiveEffectSA instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- NegativeEffectSA -->
+  <xsd:element name="negativeEffectSA" type="NegativeEffectSA" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="NegativeEffectSA">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Concern -->
+          <xsd:element ref="concernMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- NegativeEffectSA Moniker -->
+  <xsd:element name="negativeEffectSAMoniker" type="NegativeEffectSAMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="NegativeEffectSAMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for NegativeEffectSA instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+</xsd:schema>
+

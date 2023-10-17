@@ -1,0 +1,967 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Company.RICT.RICTDomainModel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.RICT</value>
+    <comment>Description for DslLibrary &apos;RICT&apos;</comment>
+  </data>
+  <data name="Company.RICT.RICTDomainModel.DisplayName" xml:space="preserve">
+    <value>RICT</value>
+    <comment>DisplayName for DslLibrary &apos;RICT&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoSA.Description" xml:space="preserve">
+    <value>The root in which all other elements are embedded. Appears as a diagram.</value>
+    <comment>Description for DomainClass &apos;SoSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoSA.DisplayName" xml:space="preserve">
+    <value>So SA</value>
+    <comment>DisplayName for DomainClass &apos;SoSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.Concern.Description" xml:space="preserve">
+    <value>Elements embedded in the model. Appear as boxes on the diagram.</value>
+    <comment>Description for DomainClass &apos;Concern&apos;</comment>
+  </data>
+  <data name="Company.RICT.Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainClass &apos;Concern&apos;</comment>
+  </data>
+  <data name="Company.RICT.Concern/Name.Description" xml:space="preserve">
+    <value>Description for Company.RICT.Concern.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Concern&apos;</comment>
+  </data>
+  <data name="Company.RICT.Concern/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Concern&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ImpactLevel</value>
+    <comment>Description for DomainClass &apos;ImpactLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevel.DisplayName" xml:space="preserve">
+    <value>Impact Level</value>
+    <comment>DisplayName for DomainClass &apos;ImpactLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevel/Name.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ImpactLevel.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;ImpactLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevel/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;ImpactLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.SystemicLevel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.SystemicLevel</value>
+    <comment>Description for DomainClass &apos;SystemicLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.SystemicLevel.DisplayName" xml:space="preserve">
+    <value>Systemic Level</value>
+    <comment>DisplayName for DomainClass &apos;SystemicLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.EnablingLevel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.EnablingLevel</value>
+    <comment>Description for DomainClass &apos;EnablingLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.EnablingLevel.DisplayName" xml:space="preserve">
+    <value>Enabling Level</value>
+    <comment>DisplayName for DomainClass &apos;EnablingLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImmediateLevel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ImmediateLevel</value>
+    <comment>Description for DomainClass &apos;ImmediateLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImmediateLevel.DisplayName" xml:space="preserve">
+    <value>Immediate Level</value>
+    <comment>DisplayName for DomainClass &apos;ImmediateLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoftwareArchitecture.Description" xml:space="preserve">
+    <value>Description for Company.RICT.SoftwareArchitecture</value>
+    <comment>Description for DomainClass &apos;SoftwareArchitecture&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoftwareArchitecture.DisplayName" xml:space="preserve">
+    <value>Software Architecture</value>
+    <comment>DisplayName for DomainClass &apos;SoftwareArchitecture&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoftwareArchitecture/Name.Description" xml:space="preserve">
+    <value>Description for Company.RICT.SoftwareArchitecture.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;SoftwareArchitecture&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoftwareArchitecture/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;SoftwareArchitecture&apos;</comment>
+  </data>
+  <data name="Company.RICT.SocialConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.SocialConcern</value>
+    <comment>Description for DomainClass &apos;SocialConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.SocialConcern.DisplayName" xml:space="preserve">
+    <value>Social Concern</value>
+    <comment>DisplayName for DomainClass &apos;SocialConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.TechnicalConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.TechnicalConcern</value>
+    <comment>Description for DomainClass &apos;TechnicalConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.TechnicalConcern.DisplayName" xml:space="preserve">
+    <value>Technical Concern</value>
+    <comment>DisplayName for DomainClass &apos;TechnicalConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.EnvironmentalConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.EnvironmentalConcern</value>
+    <comment>Description for DomainClass &apos;EnvironmentalConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.EnvironmentalConcern.DisplayName" xml:space="preserve">
+    <value>Environmental Concern</value>
+    <comment>DisplayName for DomainClass &apos;EnvironmentalConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.EconomicConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.EconomicConcern</value>
+    <comment>Description for DomainClass &apos;EconomicConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.EconomicConcern.DisplayName" xml:space="preserve">
+    <value>Economic Concern</value>
+    <comment>DisplayName for DomainClass &apos;EconomicConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectConcern.Description" xml:space="preserve">
+    <value>Reference relationship between Elements.</value>
+    <comment>Description for DomainClass &apos;UndecidedEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectConcern.DisplayName" xml:space="preserve">
+    <value>Undecided Effect Concern</value>
+    <comment>DisplayName for DomainClass &apos;UndecidedEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectConcern/Source.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ExampleRelationship.Target</value>
+    <comment>Description for DomainRole &apos;Source&apos; on DomainRelationship &apos;UndecidedEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectConcern/Source.DisplayName" xml:space="preserve">
+    <value>Source</value>
+    <comment>DisplayName for DomainRole &apos;Source&apos; on DomainRelationship &apos;UndecidedEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectConcern/Source.PropertyDisplayName" xml:space="preserve">
+    <value>Target Concerns1</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Source&apos; on DomainRelationship &apos;UndecidedEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectConcern/Target.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ExampleRelationship.Source</value>
+    <comment>Description for DomainRole &apos;Target&apos; on DomainRelationship &apos;UndecidedEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectConcern/Target.DisplayName" xml:space="preserve">
+    <value>Target</value>
+    <comment>DisplayName for DomainRole &apos;Target&apos; on DomainRelationship &apos;UndecidedEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectConcern/Target.PropertyDisplayName" xml:space="preserve">
+    <value>Source Concerns1</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Target&apos; on DomainRelationship &apos;UndecidedEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoSAHasImpactLevels.Description" xml:space="preserve">
+    <value>Description for Company.RICT.SoSAHasImpactLevels</value>
+    <comment>Description for DomainClass &apos;SoSAHasImpactLevels&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoSAHasImpactLevels.DisplayName" xml:space="preserve">
+    <value>So SAHas Impact Levels</value>
+    <comment>DisplayName for DomainClass &apos;SoSAHasImpactLevels&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoSAHasImpactLevels/SoSA.Description" xml:space="preserve">
+    <value>Description for Company.RICT.SoSAHasImpactLevels.SoSA</value>
+    <comment>Description for DomainRole &apos;SoSA&apos; on DomainRelationship &apos;SoSAHasImpactLevels&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoSAHasImpactLevels/SoSA.DisplayName" xml:space="preserve">
+    <value>So SA</value>
+    <comment>DisplayName for DomainRole &apos;SoSA&apos; on DomainRelationship &apos;SoSAHasImpactLevels&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoSAHasImpactLevels/SoSA.PropertyDisplayName" xml:space="preserve">
+    <value>Impact Levels</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SoSA&apos; on DomainRelationship &apos;SoSAHasImpactLevels&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoSAHasImpactLevels/ImpactLevel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.SoSAHasImpactLevels.ImpactLevel</value>
+    <comment>Description for DomainRole &apos;ImpactLevel&apos; on DomainRelationship &apos;SoSAHasImpactLevels&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoSAHasImpactLevels/ImpactLevel.DisplayName" xml:space="preserve">
+    <value>Impact Level</value>
+    <comment>DisplayName for DomainRole &apos;ImpactLevel&apos; on DomainRelationship &apos;SoSAHasImpactLevels&apos;</comment>
+  </data>
+  <data name="Company.RICT.SoSAHasImpactLevels/ImpactLevel.PropertyDisplayName" xml:space="preserve">
+    <value>So SA</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ImpactLevel&apos; on DomainRelationship &apos;SoSAHasImpactLevels&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevelHasConcerns.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ImpactLevelHasConcerns</value>
+    <comment>Description for DomainClass &apos;ImpactLevelHasConcerns&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevelHasConcerns.DisplayName" xml:space="preserve">
+    <value>Impact Level Has Concerns</value>
+    <comment>DisplayName for DomainClass &apos;ImpactLevelHasConcerns&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevelHasConcerns/ImpactLevel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ImpactLevelHasConcerns.ImpactLevel</value>
+    <comment>Description for DomainRole &apos;ImpactLevel&apos; on DomainRelationship &apos;ImpactLevelHasConcerns&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevelHasConcerns/ImpactLevel.DisplayName" xml:space="preserve">
+    <value>Impact Level</value>
+    <comment>DisplayName for DomainRole &apos;ImpactLevel&apos; on DomainRelationship &apos;ImpactLevelHasConcerns&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevelHasConcerns/ImpactLevel.PropertyDisplayName" xml:space="preserve">
+    <value>Concerns</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ImpactLevel&apos; on DomainRelationship &apos;ImpactLevelHasConcerns&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevelHasConcerns/Concern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ImpactLevelHasConcerns.Concern</value>
+    <comment>Description for DomainRole &apos;Concern&apos; on DomainRelationship &apos;ImpactLevelHasConcerns&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevelHasConcerns/Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;ImpactLevelHasConcerns&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImpactLevelHasConcerns/Concern.PropertyDisplayName" xml:space="preserve">
+    <value>Impact Level</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;ImpactLevelHasConcerns&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImmediateLevelHasSoftwareArchitectures.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ImmediateLevelHasSoftwareArchitectures</value>
+    <comment>Description for DomainClass &apos;ImmediateLevelHasSoftwareArchitectures&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImmediateLevelHasSoftwareArchitectures.DisplayName" xml:space="preserve">
+    <value>Immediate Level Has Software Architectures</value>
+    <comment>DisplayName for DomainClass &apos;ImmediateLevelHasSoftwareArchitectures&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImmediateLevelHasSoftwareArchitectures/ImmediateLevel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ImmediateLevelHasSoftwareArchitectures.ImmediateLevel</value>
+    <comment>Description for DomainRole &apos;ImmediateLevel&apos; on DomainRelationship &apos;ImmediateLevelHasSoftwareArchitectures&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImmediateLevelHasSoftwareArchitectures/ImmediateLevel.DisplayName" xml:space="preserve">
+    <value>Immediate Level</value>
+    <comment>DisplayName for DomainRole &apos;ImmediateLevel&apos; on DomainRelationship &apos;ImmediateLevelHasSoftwareArchitectures&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImmediateLevelHasSoftwareArchitectures/ImmediateLevel.PropertyDisplayName" xml:space="preserve">
+    <value>Software Architectures</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ImmediateLevel&apos; on DomainRelationship &apos;ImmediateLevelHasSoftwareArchitectures&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImmediateLevelHasSoftwareArchitectures/SoftwareArchitecture.Description" xml:space="preserve">
+    <value>Description for Company.RICT.ImmediateLevelHasSoftwareArchitectures.SoftwareArchitecture</value>
+    <comment>Description for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;ImmediateLevelHasSoftwareArchitectures&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImmediateLevelHasSoftwareArchitectures/SoftwareArchitecture.DisplayName" xml:space="preserve">
+    <value>Software Architecture</value>
+    <comment>DisplayName for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;ImmediateLevelHasSoftwareArchitectures&apos;</comment>
+  </data>
+  <data name="Company.RICT.ImmediateLevelHasSoftwareArchitectures/SoftwareArchitecture.PropertyDisplayName" xml:space="preserve">
+    <value>Immediate Level</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;ImmediateLevelHasSoftwareArchitectures&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.PositiveEffectConcern</value>
+    <comment>Description for DomainClass &apos;PositiveEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectConcern.DisplayName" xml:space="preserve">
+    <value>Positive Effect Concern</value>
+    <comment>DisplayName for DomainClass &apos;PositiveEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectConcern/SourceConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.PositiveEffectConcern.SourceConcern</value>
+    <comment>Description for DomainRole &apos;SourceConcern&apos; on DomainRelationship &apos;PositiveEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectConcern/SourceConcern.DisplayName" xml:space="preserve">
+    <value>Source Concern</value>
+    <comment>DisplayName for DomainRole &apos;SourceConcern&apos; on DomainRelationship &apos;PositiveEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectConcern/SourceConcern.PropertyDisplayName" xml:space="preserve">
+    <value>Target Concerns2</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceConcern&apos; on DomainRelationship &apos;PositiveEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectConcern/TargetConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.PositiveEffectConcern.TargetConcern</value>
+    <comment>Description for DomainRole &apos;TargetConcern&apos; on DomainRelationship &apos;PositiveEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectConcern/TargetConcern.DisplayName" xml:space="preserve">
+    <value>Target Concern</value>
+    <comment>DisplayName for DomainRole &apos;TargetConcern&apos; on DomainRelationship &apos;PositiveEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectConcern/TargetConcern.PropertyDisplayName" xml:space="preserve">
+    <value>Source Concerns2</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetConcern&apos; on DomainRelationship &apos;PositiveEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.NegativeEffectConcern</value>
+    <comment>Description for DomainClass &apos;NegativeEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectConcern.DisplayName" xml:space="preserve">
+    <value>Negative Effect Concern</value>
+    <comment>DisplayName for DomainClass &apos;NegativeEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectConcern/SourceConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.NegativeEffectConcern.SourceConcern</value>
+    <comment>Description for DomainRole &apos;SourceConcern&apos; on DomainRelationship &apos;NegativeEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectConcern/SourceConcern.DisplayName" xml:space="preserve">
+    <value>Source Concern</value>
+    <comment>DisplayName for DomainRole &apos;SourceConcern&apos; on DomainRelationship &apos;NegativeEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectConcern/SourceConcern.PropertyDisplayName" xml:space="preserve">
+    <value>Target Concerns3</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceConcern&apos; on DomainRelationship &apos;NegativeEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectConcern/TargetConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.NegativeEffectConcern.TargetConcern</value>
+    <comment>Description for DomainRole &apos;TargetConcern&apos; on DomainRelationship &apos;NegativeEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectConcern/TargetConcern.DisplayName" xml:space="preserve">
+    <value>Target Concern</value>
+    <comment>DisplayName for DomainRole &apos;TargetConcern&apos; on DomainRelationship &apos;NegativeEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectConcern/TargetConcern.PropertyDisplayName" xml:space="preserve">
+    <value>Source Concerns3</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetConcern&apos; on DomainRelationship &apos;NegativeEffectConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectSA.Description" xml:space="preserve">
+    <value>Description for Company.RICT.UndecidedEffectSA</value>
+    <comment>Description for DomainClass &apos;UndecidedEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectSA.DisplayName" xml:space="preserve">
+    <value>Undecided Effect SA</value>
+    <comment>DisplayName for DomainClass &apos;UndecidedEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectSA/SoftwareArchitecture.Description" xml:space="preserve">
+    <value>Description for Company.RICT.UndecidedEffectSA.SoftwareArchitecture</value>
+    <comment>Description for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;UndecidedEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectSA/SoftwareArchitecture.DisplayName" xml:space="preserve">
+    <value>Software Architecture</value>
+    <comment>DisplayName for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;UndecidedEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectSA/SoftwareArchitecture.PropertyDisplayName" xml:space="preserve">
+    <value>Target Concerns4</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;UndecidedEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectSA/Concern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.UndecidedEffectSA.Concern</value>
+    <comment>Description for DomainRole &apos;Concern&apos; on DomainRelationship &apos;UndecidedEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectSA/Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;UndecidedEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.UndecidedEffectSA/Concern.PropertyDisplayName" xml:space="preserve">
+    <value>Software Architecture1</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;UndecidedEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectSA.Description" xml:space="preserve">
+    <value>Description for Company.RICT.PositiveEffectSA</value>
+    <comment>Description for DomainClass &apos;PositiveEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectSA.DisplayName" xml:space="preserve">
+    <value>Positive Effect SA</value>
+    <comment>DisplayName for DomainClass &apos;PositiveEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectSA/SoftwareArchitecture.Description" xml:space="preserve">
+    <value>Description for Company.RICT.PositiveEffectSA.SoftwareArchitecture</value>
+    <comment>Description for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;PositiveEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectSA/SoftwareArchitecture.DisplayName" xml:space="preserve">
+    <value>Software Architecture</value>
+    <comment>DisplayName for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;PositiveEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectSA/SoftwareArchitecture.PropertyDisplayName" xml:space="preserve">
+    <value>Target Concerns5</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;PositiveEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectSA/Concern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.PositiveEffectSA.Concern</value>
+    <comment>Description for DomainRole &apos;Concern&apos; on DomainRelationship &apos;PositiveEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectSA/Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;PositiveEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.PositiveEffectSA/Concern.PropertyDisplayName" xml:space="preserve">
+    <value>Software Architecture2</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;PositiveEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectSA.Description" xml:space="preserve">
+    <value>Description for Company.RICT.NegativeEffectSA</value>
+    <comment>Description for DomainClass &apos;NegativeEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectSA.DisplayName" xml:space="preserve">
+    <value>Negative Effect SA</value>
+    <comment>DisplayName for DomainClass &apos;NegativeEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectSA/SoftwareArchitecture.Description" xml:space="preserve">
+    <value>Description for Company.RICT.NegativeEffectSA.SoftwareArchitecture</value>
+    <comment>Description for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;NegativeEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectSA/SoftwareArchitecture.DisplayName" xml:space="preserve">
+    <value>Software Architecture</value>
+    <comment>DisplayName for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;NegativeEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectSA/SoftwareArchitecture.PropertyDisplayName" xml:space="preserve">
+    <value>Target Concerns6</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SoftwareArchitecture&apos; on DomainRelationship &apos;NegativeEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectSA/Concern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.NegativeEffectSA.Concern</value>
+    <comment>Description for DomainRole &apos;Concern&apos; on DomainRelationship &apos;NegativeEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectSA/Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;NegativeEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.NegativeEffectSA/Concern.PropertyDisplayName" xml:space="preserve">
+    <value>Software Architecture3</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;NegativeEffectSA&apos;</comment>
+  </data>
+  <data name="Company.RICT.sConcern.Description" xml:space="preserve">
+    <value>Shape used to represent ExampleElements on a Diagram.</value>
+    <comment>Description for DomainClass &apos;sConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.sConcern.DisplayName" xml:space="preserve">
+    <value>SConcern</value>
+    <comment>DisplayName for DomainClass &apos;sConcern&apos;</comment>
+  </data>
+  <data name="sConcernNameDecoratorDefaultText" xml:space="preserve">
+    <value>ConcernName</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Company.RICT.sSystematicLevel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.sSystematicLevel</value>
+    <comment>Description for DomainClass &apos;sSystematicLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.sSystematicLevel.DisplayName" xml:space="preserve">
+    <value>SSystematic Level</value>
+    <comment>DisplayName for DomainClass &apos;sSystematicLevel&apos;</comment>
+  </data>
+  <data name="sSystematicLevelNameDecoratorDefaultText" xml:space="preserve">
+    <value>SystemicLevelName</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Company.RICT.sEnablingLevel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.sEnablingLevel</value>
+    <comment>Description for DomainClass &apos;sEnablingLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.sEnablingLevel.DisplayName" xml:space="preserve">
+    <value>SEnabling Level</value>
+    <comment>DisplayName for DomainClass &apos;sEnablingLevel&apos;</comment>
+  </data>
+  <data name="sEnablingLevelNameDecoratorDefaultText" xml:space="preserve">
+    <value>EnablingLevelName</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Company.RICT.sImmediateLevel.Description" xml:space="preserve">
+    <value>Description for Company.RICT.sImmediateLevel</value>
+    <comment>Description for DomainClass &apos;sImmediateLevel&apos;</comment>
+  </data>
+  <data name="Company.RICT.sImmediateLevel.DisplayName" xml:space="preserve">
+    <value>SImmediate Level</value>
+    <comment>DisplayName for DomainClass &apos;sImmediateLevel&apos;</comment>
+  </data>
+  <data name="sImmediateLevelNameDecoratorDefaultText" xml:space="preserve">
+    <value>ImmediateLevelName</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Company.RICT.sSoftwareArchitecture.Description" xml:space="preserve">
+    <value>Description for Company.RICT.sSoftwareArchitecture</value>
+    <comment>Description for DomainClass &apos;sSoftwareArchitecture&apos;</comment>
+  </data>
+  <data name="Company.RICT.sSoftwareArchitecture.DisplayName" xml:space="preserve">
+    <value>SSoftware Architecture</value>
+    <comment>DisplayName for DomainClass &apos;sSoftwareArchitecture&apos;</comment>
+  </data>
+  <data name="sSoftwareArchitectureNameDecoratorDefaultText" xml:space="preserve">
+    <value>SoftwareArchitectureName</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Company.RICT.sSocialConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.sSocialConcern</value>
+    <comment>Description for DomainClass &apos;sSocialConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.sSocialConcern.DisplayName" xml:space="preserve">
+    <value>SSocial Concern</value>
+    <comment>DisplayName for DomainClass &apos;sSocialConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.sTechnicalConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.sTechnicalConcern</value>
+    <comment>Description for DomainClass &apos;sTechnicalConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.sTechnicalConcern.DisplayName" xml:space="preserve">
+    <value>STechnical Concern</value>
+    <comment>DisplayName for DomainClass &apos;sTechnicalConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.sEnvironmentalConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.sEnvironmentalConcern</value>
+    <comment>Description for DomainClass &apos;sEnvironmentalConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.sEnvironmentalConcern.DisplayName" xml:space="preserve">
+    <value>SEnvironmental Concern</value>
+    <comment>DisplayName for DomainClass &apos;sEnvironmentalConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.sEconomicConcern.Description" xml:space="preserve">
+    <value>Description for Company.RICT.sEconomicConcern</value>
+    <comment>Description for DomainClass &apos;sEconomicConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.sEconomicConcern.DisplayName" xml:space="preserve">
+    <value>SEconomic Concern</value>
+    <comment>DisplayName for DomainClass &apos;sEconomicConcern&apos;</comment>
+  </data>
+  <data name="Company.RICT.sUndecidedEffect.Description" xml:space="preserve">
+    <value>Connector between the ExampleShapes. Represents ExampleRelationships on the Diagram.</value>
+    <comment>Description for DomainClass &apos;sUndecidedEffect&apos;</comment>
+  </data>
+  <data name="Company.RICT.sUndecidedEffect.DisplayName" xml:space="preserve">
+    <value>SUndecided Effect</value>
+    <comment>DisplayName for DomainClass &apos;sUndecidedEffect&apos;</comment>
+  </data>
+  <data name="Company.RICT.sPositiveEffect.Description" xml:space="preserve">
+    <value>Description for Company.RICT.sPositiveEffect</value>
+    <comment>Description for DomainClass &apos;sPositiveEffect&apos;</comment>
+  </data>
+  <data name="Company.RICT.sPositiveEffect.DisplayName" xml:space="preserve">
+    <value>SPositive Effect</value>
+    <comment>DisplayName for DomainClass &apos;sPositiveEffect&apos;</comment>
+  </data>
+  <data name="Company.RICT.sNegativeEffect.Description" xml:space="preserve">
+    <value>Description for Company.RICT.sNegativeEffect</value>
+    <comment>Description for DomainClass &apos;sNegativeEffect&apos;</comment>
+  </data>
+  <data name="Company.RICT.sNegativeEffect.DisplayName" xml:space="preserve">
+    <value>SNegative Effect</value>
+    <comment>DisplayName for DomainClass &apos;sNegativeEffect&apos;</comment>
+  </data>
+  <data name="FormatList" xml:space="preserve">
+    <value>RICT (*.RICT)|*.RICT</value>
+    <comment>A list of file format specifiers for the Save dialog box</comment>
+  </data>
+  <data name="ModelExplorerTitle" xml:space="preserve">
+    <value>RICT Explorer</value>
+    <comment>Model Explorer Toolwindow title</comment>
+  </data>
+  <data name="Company.RICT.RICTDiagram.Description" xml:space="preserve">
+    <value>Description for Company.RICT.RICTDiagram</value>
+    <comment>Description for DomainClass &apos;RICTDiagram&apos;</comment>
+  </data>
+  <data name="Company.RICT.RICTDiagram.DisplayName" xml:space="preserve">
+    <value>Minimal Language Diagram</value>
+    <comment>DisplayName for DomainClass &apos;RICTDiagram&apos;</comment>
+  </data>
+  <data name="RICTToolboxTab" xml:space="preserve">
+    <value>RICT</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="SocialConcernToolboxItem" xml:space="preserve">
+    <value>SocialConcern</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="SocialConcernToolboxTooltip" xml:space="preserve">
+    <value>Create an ExampleElement</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UndecidedEffectConcernToolboxItem" xml:space="preserve">
+    <value>UndecidedEffectConcern</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="UndecidedEffectConcernToolboxTooltip" xml:space="preserve">
+    <value>Drag between ExampleElements to create an ExampleRelationship</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="SystemicLevelToolboxItem" xml:space="preserve">
+    <value>SystemicLevel</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="SystemicLevelToolboxTooltip" xml:space="preserve">
+    <value>Systemic Level</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EnablingLevelToolboxItem" xml:space="preserve">
+    <value>EnablingLevel</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EnablingLevelToolboxTooltip" xml:space="preserve">
+    <value>Enabling Level</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ImmediateLevelToolboxItem" xml:space="preserve">
+    <value>ImmediateLevel</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ImmediateLevelToolboxTooltip" xml:space="preserve">
+    <value>Immediate Level</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="SoftwareArchitectureToolboxItem" xml:space="preserve">
+    <value>SoftwareArchitecture</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="SoftwareArchitectureToolboxTooltip" xml:space="preserve">
+    <value>Software Architecture</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="TechnicalConcernToolboxItem" xml:space="preserve">
+    <value>TechnicalConcern</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="TechnicalConcernToolboxTooltip" xml:space="preserve">
+    <value>Technical Concern</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EnvironmentalConcernToolboxItem" xml:space="preserve">
+    <value>EnvironmentalConcern</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EnvironmentalConcernToolboxTooltip" xml:space="preserve">
+    <value>Environmental Concern</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EconomicConcernToolboxItem" xml:space="preserve">
+    <value>EconomicConcern</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EconomicConcernToolboxTooltip" xml:space="preserve">
+    <value>Economic Concern</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="PositiveEffectConcernToolboxItem" xml:space="preserve">
+    <value>PositiveEffectConcern</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="PositiveEffectConcernToolboxTooltip" xml:space="preserve">
+    <value>Positive Effect Concern</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="NegativeEffectConcernToolboxItem" xml:space="preserve">
+    <value>NegativeEffectConcern</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="NegativeEffectConcernToolboxTooltip" xml:space="preserve">
+    <value>Negative Effect Concern</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UndecidedEffectSAToolboxItem" xml:space="preserve">
+    <value>UndecidedEffectSA</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="UndecidedEffectSAToolboxTooltip" xml:space="preserve">
+    <value>Undecided Effect SA</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="PositiveEffectSAToolboxItem" xml:space="preserve">
+    <value>PositiveEffectSA</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="PositiveEffectSAToolboxTooltip" xml:space="preserve">
+    <value>Positive Effect SA</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="NegativeEffectSAToolboxItem" xml:space="preserve">
+    <value>NegativeEffectSA</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="NegativeEffectSAToolboxTooltip" xml:space="preserve">
+    <value>Negative Effect SA</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UnresolvedToolboxItem" xml:space="preserve">
+    <value>ToolboxItem {0} was not found</value>
+    <comment>Invalid toolId</comment>
+  </data>
+  <data name="UnsupportedToolboxFormat" xml:space="preserve">
+    <value>Unsupported toolbox format: {0}</value>
+    <comment>Unsupported format Id</comment>
+  </data>
+  <data name="UnrecognizedElementType" xml:space="preserve">
+    <value>ElementType {0} is not recognized as a type of domain class which belongs to this domain model.</value>
+    <comment>Incorrect ElementType passed in to Model.CreateElement method</comment>
+  </data>
+  <data name="UnrecognizedElementLinkType" xml:space="preserve">
+    <value>ElementLinkType {0} is not recognized as a type of domain relationship which belongs to this domain model.</value>
+    <comment>Incorrect ElementLinkType passed in to Model.CreateElementLink method</comment>
+  </data>
+  <data name="AmbiguousSchema" xml:space="preserve">
+    <value>More than one schema found for target namespace &apos;{0}&apos;, use the first one at &apos;{1}&apos;.</value>
+    <comment>Serialization Warning: AmbiguousSchema</comment>
+  </data>
+  <data name="ExpectingFullFormRelationship" xml:space="preserve">
+    <value>Element &apos;{0}&apos; is treated as the target role-player of a relationship &apos;{1}&apos; instance, which should be serialized in full-form.</value>
+    <comment>Serialization Warning: ExpectingFullFormRelationship</comment>
+  </data>
+  <data name="ExpectingShortFormRelationship" xml:space="preserve">
+    <value>Instances of relationship &apos;{0}&apos; should be serialized in short-form.</value>
+    <comment>Serialization Warning: ExpectingShortFormRelationship</comment>
+  </data>
+  <data name="IgnoredPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;, ignored.</value>
+    <comment>Serialization Warning: IgnoredPropertyValue</comment>
+  </data>
+  <data name="MissingId" xml:space="preserve">
+    <value>Missing &apos;Id&apos; attribute, a new Guid &apos;{0}&apos; is auto-generated.</value>
+    <comment>Serialization Warning: MissingId</comment>
+  </data>
+  <data name="MonikerResolvedToDuplicateLink" xml:space="preserve">
+    <value>Resolving moniker &apos;{0}&apos; causes a duplicate link to be created, so the link and the moniker are ignored.</value>
+    <comment>Serialization Warning: MonikerResolvedToDuplicateLink</comment>
+  </data>
+  <data name="NoSchema" xml:space="preserve">
+    <value>Cannot find a schema that defines target namespace &apos;{0}&apos;, schema validation skipped.</value>
+    <comment>Serialization Warning: NoSchema</comment>
+  </data>
+  <data name="UnexpectedXmlElement" xml:space="preserve">
+    <value>Unexpected XML element &apos;{0}&apos;, ignored.</value>
+    <comment>Serialization Warning: UnexpectedXmlElement</comment>
+  </data>
+  <data name="AmbiguousMoniker" xml:space="preserve">
+    <value>Ambiguous moniker &apos;{0}&apos; encountered. It is used for both &apos;{1}&apos; and &apos;{2}&apos;.</value>
+    <comment>Serialization Error: AmbiguousMoniker</comment>
+  </data>
+  <data name="CannotMonikerizeElement" xml:space="preserve">
+    <value>Instances of DomainClass &apos;{0}&apos; cannot be serialized as a moniker.
+A DomainClass can be serialized as a moniker only if 
+1) it has a defined/inherited DomainProperty marked as IsMonikerKey=true, or 
+2) it is marked/inherited with SerializeId=true.</value>
+    <comment>Serialization Error: CannotMonikerizeElement</comment>
+  </data>
+  <data name="CannotOpenDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotOpenDocument</comment>
+  </data>
+  <data name="CannotSaveDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotSaveDocument</comment>
+  </data>
+  <data name="DanglingRelationship" xml:space="preserve">
+    <value>Relationship &apos;{0}&apos; instance is missing target role-player.</value>
+    <comment>Serialization Error: DanglingRelationship</comment>
+  </data>
+  <data name="InvalidPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;.</value>
+    <comment>Serialization Error: InvalidPropertyValue</comment>
+  </data>
+  <data name="MissingMoniker" xml:space="preserve">
+    <value>Missing moniker. A moniker is expected in attribute &apos;{0}&apos;.</value>
+    <comment>Serialization Error: MissingMoniker</comment>
+  </data>
+  <data name="MissingTransaction" xml:space="preserve">
+    <value>This must be called within the context of an active transaction.</value>
+    <comment>Serialization Error: MissingTransaction</comment>
+  </data>
+  <data name="UnresolvedMoniker" xml:space="preserve">
+    <value>Cannot resolve moniker &apos;{0}&apos;.</value>
+    <comment>Serialization Error: UnresolvedMoniker</comment>
+  </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>Unsupported version &apos;{0}&apos;, can only support &apos;{1}&apos;.</value>
+    <comment>Serialization Error: VersionMismatch</comment>
+  </data>
+  <data name="CannotCloseExistingDiagramDocument" xml:space="preserve">
+    <value>Diagram file &apos;{0}&apos; cannot be closed.</value>
+    <comment>User cancel closing diagram file. Hence, the DSL model file cannot be opened</comment>
+  </data>
+  <data name="BindingErrorOccurred" xml:space="preserve">
+    <value>Extensions for this designer may not be found as a MEF binding error has occurred. The error that occurred was:
+{0}</value>
+    <comment>MEF binding error occurred - exception message being logged in the error window so the user is aware.</comment>
+  </data>
+  <data name="InvalidSaveRootElementType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid root element type.</value>
+    <comment>Exception message used if an invalid root element type is passed to IDomainModelSerializer.SaveModel / SaveModelAndDiagram</comment>
+  </data>
+  <data name="InvalidSaveDiagramType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid diagram type.</value>
+    <comment>Exception message used if an invalid diagram type is passed to IDomainModelSerializer.SaveModelAndDiagram</comment>
+  </data>
+  <data name="MinimumMultiplicityMissingLink" xml:space="preserve">
+    <value>{0} {1} has no {2}.</value>
+    <comment>Multiplicity underflow validation.</comment>
+  </data>
+  <data name="SaveOperationCancelled" xml:space="preserve">
+    <value>Save operation cancelled.</value>
+    <comment>Message when save is cancelled on validation errors</comment>
+  </data>
+  <data name="SaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors, continue save?</value>
+    <comment>Message when validation errors are found on save</comment>
+  </data>
+  <data name="UnloadableSaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors. Continuing to save may cause the file to become unloadable, do you want to continue?</value>
+    <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="sPositiveEffectIconDecoratorDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\PlusSymbol.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="sNegativeEffectIconDecoratorDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\MinusSymbol.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="SocialConcernToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\socialConcernSymbol.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="UndecidedEffectConcernToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\exampleconnectortoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="SystemicLevelToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\exampleshapetoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EnablingLevelToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\exampleshapetoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ImmediateLevelToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\exampleshapetoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="SoftwareArchitectureToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\softwareArchitectureSymbol.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="TechnicalConcernToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\technicalConcernSymbol.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EnvironmentalConcernToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\environmentalConcernSymbol.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EconomicConcernToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\economicConcernSymbol.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="PositiveEffectConcernToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\exampleconnectortoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="NegativeEffectConcernToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\exampleconnectortoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="UndecidedEffectSAToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\exampleconnectortoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="PositiveEffectSAToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\exampleconnectortoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="NegativeEffectSAToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\exampleconnectortoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+</root>
+
+
