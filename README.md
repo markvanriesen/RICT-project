@@ -38,7 +38,8 @@ Wait patiently until the toolbox initializes. This might take a moment.
 
 **Step 7: Use the Toolbox Elements**
 
-1. Start by dragging the impact levels into the model: systemic, enabling, and immediate. 2. In the properties of an element, assign a name to the impact level.
+1. Start by dragging the impact levels into the model: systemic, enabling, and immediate.
+2. In the properties of an element, assign a name to the impact level.
 3. Drag the software architecture into the immediate level. Double-click on the element to
 assign a name.
 4. Drag concerns (Technical, Environmental, Social, Economic) to the corresponding impact
