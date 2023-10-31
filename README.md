@@ -31,7 +31,9 @@ Wait patiently until the toolbox initializes. This might take a moment.
 **Step 6: Create a Model**
 
 ● Open Sample.RICT: This file contains an example model.
+
 ● Open Test.RICT to create a model from scratch.
+
 ● Initialize the toolbox by going to View -> Toolbox.
 
 **Step 7: Use the Toolbox Elements**
@@ -45,9 +47,11 @@ level. Double-click on the element to name it.
 **Step 8: Connect Elements via Relations**
 
 1. Connect software architecture to concerns using relations (undecided, positive, negative).
+   
 ● These relations have "SA" at the end of their name.
-● Click on the relation tool, then click on the software architecture, and finally on the
-concern to establish the connection.
+
+● Click on the relation tool, then click on the software architecture, and finally on the concern to establish the connection.
+
 2. Similarly, connect concerns using relations with "Concern" at the end of their name.
    
 **Step 9: Explore the Model Structure**
